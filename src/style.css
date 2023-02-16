@@ -513,11 +513,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.text-lg {
-  font-size: 1.125rem;
-  line-height: 1.75rem;
-}
-
 /* Josefins Sans */
 
 /* Poppins */
@@ -534,7 +529,7 @@ h6,
 .subtitle {
   font-family: Josefin Sans, Segoe UI, Tahoma, Geneva, Verdana, sans-serif;
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+  color: rgb(19 0 90 / var(--tw-text-opacity));
 }
 
 p,
@@ -544,5 +539,29 @@ button,
 .body1 {
   font-family: Poppins, Courier New, Courier, monospace;
   --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
+  color: rgb(19 0 90 / var(--tw-text-opacity));
+}
+
+h1 {
+  font-size: 2.7rem;
+}
+
+h2 {
+  font-size: 2.441rem;
+}
+
+h3 {
+  font-size: 1.953rem;
+}
+
+h4 {
+  font-size: 1.563rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+h6 {
+  font-size: 1rem;
 }
