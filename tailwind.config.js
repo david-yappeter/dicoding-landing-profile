@@ -3,12 +3,23 @@ module.exports = {
   content: ['./src/**/*.{html,js}'],
   theme: {
     extend: {
+      backgroundImage: {
+        me: 'url(./assets/me.png)',
+      },
+      backgroundSize: {
+        '50%': '50%',
+        '66%': '66%',
+        '85%': '85%',
+        '95%': '95%',
+        '100%': '100%',
+      },
       colors: {
         custom: {
-          primary: 'rgb(19, 0, 90)',
+          primary: 'rgb(3, 201, 136)',
+          'primary-hover': 'rgb(3, 240, 180)',
+          'bg-primary': 'rgb(19, 0, 90)',
           'primary-light': 'rgb(0, 51, 124)',
           tosca: 'rgb(28, 130, 173)',
-          green: 'rgb(3, 201, 136)',
         },
       },
       fontSize: {
@@ -30,6 +41,11 @@ module.exports = {
           'sans-serif',
         ],
         poppins: ['Poppins', 'Courier New', 'Courier', 'monospace'],
+      },
+      spacing: {
+        '100px': '100px',
+        '150px': '150px',
+        '200px': '200px',
       },
     },
   },

@@ -7,6 +7,20 @@
 /* Poppins */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+html {
+  @apply bg-custom-bg-primary;
+}
+
+body {
+  @apply px-100px bg-me bg-no-repeat bg-right-top bg-100% sm:bg-85% md:bg-66% lg:bg-50%;
+}
+
+body {
+  min-height: 100vh;
+}
+
+/* background: url(./assets/me.png) right top / 50% no-repeat; */
+
 /* Typography */
 h1,
 h2,
@@ -23,6 +37,7 @@ p,
 span,
 input,
 button,
+a,
 .body1 {
   @apply font-poppins text-custom-primary;
 }
@@ -49,4 +64,26 @@ h5 {
 
 h6 {
   @apply text-base;
+}
+
+/* header */
+#header {
+  @apply fixed top-0 py-5 bg-custom-primary-light;
+}
+
+#header.at-top {
+  @apply bg-transparent;
+}
+
+.navbar-container {
+  @apply flex justify-start items-center;
+}
+
+.navbar-item {
+  @apply transition-colors md:mr-8 text-lg lg:text-xl font-bold hover:text-custom-primary-hover;
+}
+
+/* home */
+#home {
+  @apply h-screen flex items-center;
 }
