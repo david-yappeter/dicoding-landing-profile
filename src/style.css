@@ -610,10 +610,14 @@ h6 {
 #header {
   position: fixed;
   top: 0px;
+  left: 0px;
+  right: 0px;
   --tw-bg-opacity: 1;
   background-color: rgb(0 51 124 / var(--tw-bg-opacity));
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 #header.at-top {

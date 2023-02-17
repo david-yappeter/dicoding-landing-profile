@@ -68,7 +68,7 @@ h6 {
 
 /* header */
 #header {
-  @apply fixed top-0 py-5 bg-custom-primary-light;
+  @apply fixed top-0 py-5 px-100px left-0 right-0 bg-custom-primary-light;
 }
 
 #header.at-top {
