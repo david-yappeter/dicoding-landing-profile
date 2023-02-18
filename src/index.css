@@ -12,11 +12,15 @@ html {
 }
 
 body {
-  @apply px-30px sm:px-100px md:px-200px lg:px-300px bg-me bg-no-repeat bg-right-top bg-100% sm:bg-85% md:bg-66% lg:bg-50%;
+  @apply bg-me bg-no-repeat bg-right-top bg-100% sm:bg-85% md:bg-66% lg:bg-50%;
 }
 
 body {
   min-height: 100vh;
+}
+
+section {
+  @apply px-30px sm:px-50px md:px-100px xl:px-300px;
 }
 
 /* background: url(./assets/me.png) right top / 50% no-repeat; */
@@ -121,11 +125,11 @@ h6 {
 }
 
 #article-content {
-  @apply w-full px-70px;
+  @apply w-full xl:px-70px;
 }
 
 .article-link {
-  @apply block mb-30px;
+  @apply block mb-80px xl:mb-30px;
 }
 
 .article-link:hover h3,
@@ -134,9 +138,26 @@ h6 {
 }
 
 .article-container {
-  @apply w-full flex items-center justify-start;
+  @apply w-full flex items-center justify-start flex-col xl:flex-row;
 }
 
 .article-image {
-  @apply rounded-3xl mr-50px self-start;
+  @apply block rounded-3xl mx-auto mb-30px xl:mb-0 xl:ml-0 xl:mr-50px self-start;
+}
+
+/* footer (contact) */
+#footer {
+  @apply pt-20px bg-custom-primary-light pb-20px;
+}
+
+.contact-circle {
+  @apply bg-custom-primary flex items-center justify-center w-40px h-40px rounded-full mr-20px cursor-pointer;
+}
+
+.contact-circle i {
+  @apply transition-colors text-black;
+}
+
+.contact-circle:hover i {
+  @apply text-custom-primary-hover;
 }

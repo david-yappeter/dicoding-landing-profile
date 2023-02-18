@@ -513,8 +513,21 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .mb-0 {
   margin-bottom: 0px;
+}
+
+.mb-10px {
+  margin-bottom: 10px;
+}
+
+.mb-30px {
+  margin-bottom: 30px;
 }
 
 .mb-4 {
@@ -529,12 +542,28 @@ video {
   margin-left: 2.5rem;
 }
 
-.mt-20px {
-  margin-top: 20px;
+.mt-30px {
+  margin-top: 30px;
+}
+
+.block {
+  display: block;
 }
 
 .flex {
   display: flex;
+}
+
+.hidden {
+  display: none;
+}
+
+.w-60 {
+  width: 15rem;
+}
+
+.w-60\% {
+  width: 60%;
 }
 
 .grow {
@@ -584,12 +613,12 @@ video {
   padding-bottom: 50px;
 }
 
-.pt-20px {
-  padding-top: 20px;
-}
-
 .pb-50px {
   padding-bottom: 50px;
+}
+
+.pt-20px {
+  padding-top: 20px;
 }
 
 .pt-30px {
@@ -639,36 +668,54 @@ body {
   background-size: 100%;
   background-position: right top;
   background-repeat: no-repeat;
-  padding-left: 30px;
-  padding-right: 30px;
 }
 
 @media (min-width: 640px) {
   body {
     background-size: 85%;
-    padding-left: 100px;
-    padding-right: 100px;
   }
 }
 
 @media (min-width: 768px) {
   body {
     background-size: 66%;
-    padding-left: 200px;
-    padding-right: 200px;
   }
 }
 
 @media (min-width: 1024px) {
   body {
     background-size: 50%;
-    padding-left: 300px;
-    padding-right: 300px;
   }
 }
 
 body {
   min-height: 100vh;
+}
+
+section {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+@media (min-width: 640px) {
+  section {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@media (min-width: 768px) {
+  section {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+@media (min-width: 1280px) {
+  section {
+    padding-left: 300px;
+    padding-right: 300px;
+  }
 }
 
 /* background: url(./assets/me.png) right top / 50% no-repeat; */
@@ -900,13 +947,24 @@ h6 {
 
 #article-content {
   width: 100%;
-  padding-left: 70px;
-  padding-right: 70px;
+}
+
+@media (min-width: 1280px) {
+  #article-content {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
 }
 
 .article-link {
-  margin-bottom: 30px;
+  margin-bottom: 80px;
   display: block;
+}
+
+@media (min-width: 1280px) {
+  .article-link {
+    margin-bottom: 30px;
+  }
 }
 
 .article-link:hover h3,
@@ -921,24 +979,86 @@ h6 {
 .article-container {
   display: flex;
   width: 100%;
+  flex-direction: column;
   align-items: center;
   justify-content: flex-start;
 }
 
+@media (min-width: 1280px) {
+  .article-container {
+    flex-direction: row;
+  }
+}
+
 .article-image {
-  margin-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  display: block;
   align-self: flex-start;
   border-radius: 1.5rem;
 }
 
+@media (min-width: 1280px) {
+  .article-image {
+    margin-bottom: 0px;
+    margin-left: 0px;
+    margin-right: 50px;
+  }
+}
+
+/* footer (contact) */
+
+#footer {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 51 124 / var(--tw-bg-opacity));
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.contact-circle {
+  margin-right: 20px;
+  display: flex;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(3 201 136 / var(--tw-bg-opacity));
+}
+
+.contact-circle i {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+  transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.contact-circle:hover i {
+  --tw-text-opacity: 1;
+  color: rgb(3 240 180 / var(--tw-text-opacity));
+}
+
 @media (min-width: 1024px) {
+  .lg\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
 
-  .lg\:px-70px {
-    padding-left: 70px;
-    padding-right: 70px;
+  .lg\:px-20px {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .lg\:px-8 {
@@ -948,5 +1068,12 @@ h6 {
 
   .lg\:text-left {
     text-align: left;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:px-70px {
+    padding-left: 70px;
+    padding-right: 70px;
   }
 }
