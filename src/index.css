@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 html {
-  @apply bg-custom-bg-primary;
+  @apply bg-gradient-to-r from-custom-bg-primary to-custom-bg-end;
 }
 
 body {
@@ -43,27 +43,27 @@ a,
 }
 
 h1 {
-  @apply text-5xl;
+  @apply text-4xl lg:text-5xl;
 }
 
 h2 {
-  @apply text-4xl;
+  @apply text-3xl lg:text-4xl;
 }
 
 h3 {
-  @apply text-3xl;
+  @apply text-2xl lg:text-3xl;
 }
 
 h4 {
-  @apply text-2xl;
+  @apply text-xl lg:text-2xl;
 }
 
 h5 {
-  @apply text-xl;
+  @apply text-base lg:text-xl;
 }
 
 h6 {
-  @apply text-base;
+  @apply text-sm lg:text-base;
 }
 
 /* button */
@@ -108,14 +108,35 @@ h6 {
 
 /* about me */
 #about {
-  @apply pt-100px pb-50px;
+  @apply mt-100px mb-50px;
 }
 
 #about-aside {
-  @apply ml-10 grow basis-1/5 flex flex-col justify-center items-center;
+  @apply ml-0 mb-6 lg:mb-0 lg:ml-10 grow basis-1/5 flex flex-col justify-center items-center;
 }
 
 /* articles */
 #articles {
   @apply py-50px;
+}
+
+#article-content {
+  @apply w-full px-70px;
+}
+
+.article-link {
+  @apply block mb-30px;
+}
+
+.article-link:hover h3,
+.article-link:hover p {
+  @apply text-custom-primary-hover transition-colors;
+}
+
+.article-container {
+  @apply w-full flex items-center justify-start;
+}
+
+.article-image {
+  @apply rounded-3xl mr-50px self-start;
 }

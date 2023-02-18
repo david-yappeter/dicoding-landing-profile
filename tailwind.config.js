@@ -19,6 +19,7 @@ module.exports = {
           'primary-hover': 'rgb(3, 240, 180)',
           'primary-inverse': 'rgb(255,255,255)',
           'bg-primary': 'rgb(19, 0, 90)',
+          'bg-end': 'rgb(19, 60, 140)',
           'primary-light': 'rgb(0, 51, 124)',
           tosca: 'rgb(28, 130, 173)',
         },
@@ -44,8 +45,10 @@ module.exports = {
         poppins: ['Poppins', 'Courier New', 'Courier', 'monospace'],
       },
       spacing: {
+        '20px': '20px',
         '30px': '30px',
         '50px': '50px',
+        '70px': '70px',
         '100px': '100px',
         '150px': '150px',
         '175px': '175px',

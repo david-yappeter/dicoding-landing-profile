@@ -21,6 +21,9 @@
           <li>
             <a class="navbar-item" href="#articles">Articles</a>
           </li>
+          <li>
+            <a class="navbar-item" href="#articles">Contact</a>
+          </li>
         </ul>
       </header>
       <!-- end::header -->
@@ -44,18 +47,18 @@
         <!-- end::home -->
 
         <!-- start::about me -->
-        <section id="about">
+        <section id="about" class="glassmorphism pt-20px">
+          <h2 class="text-center font-bold">About Me</h2>
           <div
-            class="glassmorphism px-8 py-50px flex justify-between items-center">
-            <div class="grow basis-3/5">
-              <h2 class="mb-4">About Me</h2>
-              <p class="text-white mb-5">
+          class=" px-4 lg:px-8 pt-30px pb-50px flex-col-reverse lg:flex-row flex justify-between items-center">
+          <div class="px-0px lg:px-70px grow basis-3/5">
+              <p class="text-center lg:text-left text-white mb-5">
                 As a website programmer, I love learning about new things and
                 honing my skills. I mainly developed websites and small flutter
                 apps. I am up for a new challenge on my way to improving my
                 knowledge.
               </p>
-              <a href="articles">SEE ARTICLES </a>
+              <a href="#articles">SEE ARTICLES </a>
             </div>
             <aside id="about-aside">
               <img width="175px" src="./assets/me-2.png" class="mb-4" />
@@ -69,9 +72,29 @@
         <section id="articles">
           <div
             class="glassmorphism px-8 py-50px flex flex-col justify-center items-center">
-              <h2 class="mb-4">Articles</h2>
+              <h2 class="font-bold mb-4">Articles</h2>
               <div id="article-content">
-
+              <a class="article-link" href="https://david-yappeter.medium.com/golang-pass-by-value-vs-pass-by-reference-e48aac8b2716">
+                <article class="article-container">
+                  <img class="article-image" src="./assets/article-1.png"></img>
+                  <div>
+                    <p class="text-sm mb-0">Aug 30, 2021 (Published on Medium)</p>
+                    <h3>Golang Pass by value vs Pass by reference</h3>
+                    <p>Basic of Golang Pointer</p>
+                  </div>
+                </article>
+              </a>
+              
+              <a class="article-link" href="https://david-yappeter.medium.com/golang-pass-by-value-vs-pass-by-reference-e48aac8b2716">
+                <article class="article-container">
+                  <img class="article-image" src="./assets/article-1.png"></img>
+                  <div>
+                    <p class="text-sm mb-0">Aug 30, 2021 (Published on Medium)</p>
+                    <h3>Golang Pass by value vs Pass by reference</h3>
+                    <p>Basic of Golang Pointer</p>
+                  </div>
+                </article>
+              </a>
               </div>
             </div>
             <div class="ml-10 grow basis-1/5">
