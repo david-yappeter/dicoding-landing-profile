@@ -12,7 +12,7 @@ html {
 }
 
 body {
-  @apply px-100px bg-me bg-no-repeat bg-right-top bg-100% sm:bg-85% md:bg-66% lg:bg-50%;
+  @apply px-30px sm:px-100px md:px-200px lg:px-300px bg-me bg-no-repeat bg-right-top bg-100% sm:bg-85% md:bg-66% lg:bg-50%;
 }
 
 body {
@@ -66,9 +66,18 @@ h6 {
   @apply text-base;
 }
 
+/* button */
+.btn {
+  @apply rounded-full px-4 py-3 transition-colors;
+}
+
+.btn-primary {
+  @apply bg-custom-primary hover:bg-custom-primary-hover text-custom-primary-inverse;
+}
+
 /* header */
 #header {
-  @apply fixed top-0 py-5 px-100px left-0 right-0 bg-custom-primary-light;
+  @apply fixed z-10 top-0 py-5 md:px-200px lg:px-300px left-0 right-0 bg-custom-primary-light;
 }
 
 #header.at-top {
@@ -83,7 +92,30 @@ h6 {
   @apply transition-colors md:mr-8 text-lg lg:text-xl font-bold hover:text-custom-primary-hover;
 }
 
+/* glassmorphism */
+.glassmorphism {
+  background: rgba(47, 224, 255, 0.144);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+}
+
 /* home */
 #home {
   @apply h-screen flex items-center;
+}
+
+/* about me */
+#about {
+  @apply pt-100px pb-50px;
+}
+
+#about-aside {
+  @apply ml-10 grow basis-1/5 flex flex-col justify-center items-center;
+}
+
+/* articles */
+#articles {
+  @apply py-50px;
 }
