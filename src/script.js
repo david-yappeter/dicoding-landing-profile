@@ -90,7 +90,7 @@ function buildArticle({
 
   articleLink.innerHTML = `
   <article class="article-container">
-    <img class="article-image" src="${img}"></img>
+    <img alt="article image" class="article-image" src="${img}"></img>
     <div>
       <p class="text-sm text-center lg:text-left mb-10px">${published_at} <span class="hidden lg:block">(Published on ${published_on})</span></p>
       <h3 class="text-center lg:text-left mb-10px">${title}</h3>

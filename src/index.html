@@ -6,7 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="./styles.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
   </head>
   <body>
     <div id="app">
@@ -14,7 +19,9 @@
       <header id="header" class="at-top">
         <!-- start::navbar -->
         <nav id="navbar">
-          <div class="navbar-bar-icon text-white text-3xl mb-10px sm:hidden" for="navbar">
+          <div
+            class="navbar-bar-icon text-white text-3xl mb-10px sm:hidden"
+            for="navbar">
             <i class="fa-solid fa-bars"></i>
           </div>
           <ul class="navbar-list-container mobile-open">
@@ -58,68 +65,76 @@
         </section>
         <!-- end::home -->
 
-        <!-- start::about me -->
-        <section id="about">
-          <div class="glassmorphism pt-20px">
-            <h2 class="text-center font-bold">About Me</h2>
+        <section class="flex flex-col-reverse lg:flex-row mt-100px">
+          <!-- start::articles -->
+          <div id="articles" class="grow basis-3/5">
             <div
-            class=" px-4 lg:px-8 pt-30px pb-50px flex-col-reverse lg:flex-row flex justify-between items-center">
-            <div class="px-0px lg:px-20px xl:px-70px grow basis-3/5">
-                <p class="text-center lg:text-left text-white mb-12px">
-                  As a website programmer, I love learning about new things and
-                  honing my skills. I mainly developed websites and small flutter
-                  apps. I am up for a new challenge on my way to improving my
-                  knowledge.
-                </p>
-                <a class="block text-center lg:text-left mx-auto lg:mx-0" href="#articles">SEE ARTICLES </a>
-              </div>
-              <aside id="about-aside">
-                <img width="175px" src="./assets/me-2.png" class="mb-10px" />
-                <p class="font-bold">David Yappeter</p>
-              </aside>
-            </div>
-          </div>
-        </section>
-        <!-- end::about me -->
-
-        <!-- start::articles -->
-        <section id="articles">
-          <div
-            class="glassmorphism px-8 py-50px flex flex-col justify-center items-center">
+              class="glassmorphism px-8 py-50px flex flex-col justify-center items-center">
               <h2 class="font-bold mb-10px">Articles</h2>
               <div id="article-content">
+                <!-- generated content article by javascript -->
               </div>
             </div>
-            <div class="ml-40px grow basis-1/5">
-            </div>
+            <div class="ml-40px grow basis-1/5"></div>
           </div>
+          <!-- end::articles -->
+
+          <!-- start::about me -->
+          <aside id="about" class="grow basis-2/5 lg:ml-40px">
+            <div class="glassmorphism pt-50px">
+              <h2 class="text-center font-bold">About Me</h2>
+              <div
+                class="px-4 lg:px-8 pt-30px pb-50px flex-col-reverse flex justify-between items-center">
+                <div class="px-0px lg:px-20px xl:px-40px grow basis-3/5">
+                  <p class="text-center lg:text-left text-white mb-12px">
+                    As a website programmer, I love learning about new things
+                    and honing my skills. I mainly developed websites and small
+                    flutter apps. I am up for a new challenge on my way to
+                    improving my knowledge.
+                  </p>
+                </div>
+                <div id="about-aside">
+                  <img
+                    alt="profile picture"
+                    width="175px"
+                    src="./assets/me-2.png"
+                    class="mb-10px" />
+                  <p class="font-bold">David Yappeter</p>
+                </div>
+              </div>
+            </div>
+          </aside>
+          <!-- end::about me -->
         </section>
-        <!-- end::about me -->
       </main>
       <!-- end::main -->
 
       <!-- start::footer -->
       <footer id="footer">
         <div id="contact" class="flex justify-center items-center flex-col">
-            <h2 class="mb-30px">Find me at</h2>
-            <div class="flex">
-              <a href="https://github.com/david-yappeter" class="contact-circle">
-                <i class="fab fa-github fa-lg"></i>
-              </a>
-              <a href="https://www.linkedin.com/in/david-yappeter-969a531a9/" class="contact-circle">
-                <i class="fab fa-medium fa-lg"></i>
-              </a>
-              <a href="https://medium.com/@david-yappeter" class="contact-circle">
-                <i class="fab fa-linkedin fa-lg"></i>
-              </a>
-              <a href="https://stackoverflow.com/users/17488015/david-yappeter" class="contact-circle">
-                <i class="fab fa-stack-overflow fa-lg"></i>
-              </a>
-            </div>
+          <h2 class="mb-30px">Find me at</h2>
+          <div class="flex">
+            <a href="https://github.com/david-yappeter" class="contact-circle">
+              <i class="fab fa-github fa-lg"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/david-yappeter-969a531a9/"
+              class="contact-circle">
+              <i class="fab fa-medium fa-lg"></i>
+            </a>
+            <a href="https://medium.com/@david-yappeter" class="contact-circle">
+              <i class="fab fa-linkedin fa-lg"></i>
+            </a>
+            <a
+              href="https://stackoverflow.com/users/17488015/david-yappeter"
+              class="contact-circle">
+              <i class="fab fa-stack-overflow fa-lg"></i>
+            </a>
+          </div>
 
-            <hr class="w-60% mt-30px mb-10px"/>
+          <hr class="w-60% mt-30px mb-10px" />
 
-            <h6>Copyright &#169; 2023 David. All right reserved.</h6>
+          <h6>Copyright &#169; 2023 David. All right reserved.</h6>
         </div>
       </footer>
       <!-- end::footer -->
