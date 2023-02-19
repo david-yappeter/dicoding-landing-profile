@@ -92,8 +92,8 @@ function buildArticle({
   <article class="article-container">
     <img class="article-image" src="${img}"></img>
     <div>
-      <p class="text-sm text-center lg:text-left mb-0">${published_at} <span class="hidden lg:block">(Published on ${published_on})</span></p>
-      <h3 class="text-center lg:text-left">${title}</h3>
+      <p class="text-sm text-center lg:text-left mb-10px">${published_at} <span class="hidden lg:block">(Published on ${published_on})</span></p>
+      <h3 class="text-center lg:text-left mb-10px">${title}</h3>
       <p class="text-center lg:text-left">${subtitle}</p>
     </div>
   </article>

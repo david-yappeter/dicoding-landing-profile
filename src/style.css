@@ -550,6 +550,10 @@ video {
   margin-top: 30px;
 }
 
+.ml-40px {
+  margin-left: 40px;
+}
+
 .block {
   display: block;
 }
@@ -560,10 +564,6 @@ video {
 
 .hidden {
   display: none;
-}
-
-.h-37px {
-  height: 37px;
 }
 
 .h-77px {
