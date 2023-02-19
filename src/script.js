@@ -68,13 +68,6 @@ const articleList = [
   },
 ];
 
-document.addEventListener('DOMContentLoaded', function () {
-  onScroll();
-  document.addEventListener('scroll', onScroll);
-
-  articleList.forEach(buildArticle);
-});
-
 function onScroll() {
   if (window.scrollY > 0) {
     document.querySelector('#header').classList.remove('at-top');
@@ -108,3 +101,21 @@ function buildArticle({
 
   DOM_ARTICLE_CONTENT.appendChild(articleLink);
 }
+
+document.addEventListener('DOMContentLoaded', function () {
+  // on scroll
+  onScroll();
+  document.addEventListener('scroll', onScroll);
+
+  // article
+  articleList.forEach(buildArticle);
+
+  // global icon button
+  document.querySelectorAll('.navbar-bar-icon').forEach((dom) => {
+    dom.addEventListener('click', function () {
+      document
+        .getElementById(dom.getAttribute('for'))
+        .classList.toggle('mobile-open');
+    });
+  });
+});

@@ -12,34 +12,45 @@
     <div id="app">
       <!-- start::header -->
       <header id="header" class="at-top">
-        <ul class="navbar-container">
-          <li>
-            <a class="navbar-item" href="#home">Home</a>
-          </li>
-          <li>
-            <a class="navbar-item" href="#about">About</a>
-          </li>
-          <li>
-            <a class="navbar-item" href="#articles">Articles</a>
-          </li>
-          <li>
-            <a class="navbar-item" href="#articles">Contact</a>
-          </li>
-        </ul>
+        <!-- start::navbar -->
+        <nav id="navbar">
+          <div class="navbar-bar-icon text-white text-3xl mb-10px sm:hidden" for="navbar">
+            <i class="fa-solid fa-bars"></i>
+          </div>
+          <ul class="navbar-list-container mobile-open">
+            <li>
+              <a class="navbar-item" href="#home">Home</a>
+            </li>
+            <li>
+              <a class="navbar-item" href="#about">About</a>
+            </li>
+            <li>
+              <a class="navbar-item" href="#articles">Articles</a>
+            </li>
+            <li>
+              <a class="navbar-item" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+        <!-- end::navbar -->
       </header>
       <!-- end::header -->
+
+      <!-- start::header-placeholder -->
+      <div class="h-77px sm:hidden"></div>
+      <!-- end::header-placeholder -->
 
       <!-- start::main -->
       <main>
         <!-- start::home -->
         <section id="home">
           <div>
-            <h1>
+            <h1 class="mb-10px">
               Hello I am
               <br />
               <strong>David</strong>
             </h1>
-            <p>Software Developer</p>
+            <p class="mb-20px">Software Developer</p>
             <button class="btn btn-primary">
               <p class="text-lg font-bold text-inherit">Contact Me</p>
             </button>
@@ -89,7 +100,7 @@
 
       <!-- start::footer -->
       <footer id="footer">
-        <div class="flex justify-center items-center flex-col">
+        <div id="contact" class="flex justify-center items-center flex-col">
             <h2 class="mb-30px">Find me at</h2>
             <div class="flex">
               <a href="https://github.com/david-yappeter" class="contact-circle">

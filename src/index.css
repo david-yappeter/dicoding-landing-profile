@@ -81,19 +81,27 @@ h6 {
 
 /* header */
 #header {
-  @apply fixed z-10 top-0 py-5 md:px-200px lg:px-300px left-0 right-0 bg-custom-primary-light;
+  @apply fixed z-10 top-0 py-5 px-30px sm:px-50px md:px-100px xl:px-300px left-0 right-0 bg-custom-primary-light;
 }
 
 #header.at-top {
-  @apply bg-transparent;
+  @apply sm:bg-transparent;
 }
 
-.navbar-container {
-  @apply flex justify-start items-center;
+#navbar {
+  @apply h-37px overflow-hidden sm:h-auto;
+}
+
+#navbar.mobile-open {
+  @apply h-auto;
+}
+
+.navbar-list-container {
+  @apply flex flex-col sm:flex-row justify-start items-start sm:items-center;
 }
 
 .navbar-item {
-  @apply transition-colors md:mr-8 text-lg lg:text-xl font-bold hover:text-custom-primary-hover;
+  @apply transition-colors sm:mr-8 text-lg lg:text-xl font-bold hover:text-custom-primary-hover;
 }
 
 /* glassmorphism */
@@ -107,7 +115,7 @@ h6 {
 
 /* home */
 #home {
-  @apply h-screen flex items-center;
+  @apply h-screen flex items-center translate-y-100px sm:translate-y-0;
 }
 
 /* about me */
